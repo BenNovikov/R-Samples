@@ -35,7 +35,7 @@ textFile.tdm <- TermDocumentMatrix(corp, control = list(removePunctuation = TRUE
                                                         removeNumbers = TRUE)) 
 for(i in 1:ncol(textFile.tdm)) inspect(textFile.tdm[, i])
 
-## Find words that occur at least 100 times
+## Find words that occur at least 10 times
 ft <- findFreqTerms(textFile.tdm, lowfreq = 10, highfreq = Inf)
 ft.tdm <- inspect(textFile.tdm[ft, ])
 apply(ft.tdm, 1, sum)

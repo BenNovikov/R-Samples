@@ -1,10 +1,10 @@
-# Sys.setlocale('LC_ALL', 'ukrainian')
+# Sys.setlocale('LC_ALL', 'ukrainian')  ## For Windows only, MacOS doesn't honour it
 library(XML)
 library(ggplot2)
 library(grid)
-# library(ggdendro)
 library(dplyr)
 library(tidyr)
+# library(ggdendro)
 # library(cluster)
 library(reshape2)
 library(scales)
